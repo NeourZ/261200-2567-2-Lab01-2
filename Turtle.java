@@ -43,19 +43,59 @@
      {
          Turtle bob = new Turtle();
          
-         bob.penColor("black");
-         bob.width(2);
-         bob.speed(5);
+         bob.speed(1);
 
-         for(int i=0;i<6;i++){
-            bob.forward(60);
-            bob.left(90);
-            bob.forward(60);
-            bob.left(90); 
-            bob.forward(60);
-            bob.left(120);
-         }
-
+         bob.home();
+        bob.penColor("cornflowerblue");
+        for(int i=0;i<600;i++) {
+            bob.forward(i/15);
+            bob.width(i*0.05);
+            bob.left(15);
+        }        
+         bob.home();
+        bob.penColor("yellow");
+        for(int i=0;i<250;i++) {
+            bob.forward(i/15);
+            bob.width(i*0.03);
+            bob.left(15);
+        }        
+        bob.home();
+        bob.penColor("red");
+        for(int i=0;i<200;i++) {
+            bob.forward(i/15);
+            bob.width(i*0.05);
+            bob.right(55);
+        } 
+        bob.home();
+        bob.penColor("white");
+        bob.right(90);
+        bob.width(5);
+        bob.forward(80);
+        bob.penColor("greenyellow");
+        bob.left(90);
+        bob.forward(80);
+        bob.right(90);
+        bob.forward(40);
+        bob.right(90);
+        bob.forward(160);
+        bob.right(90);
+        bob.forward(40);
+        bob.right(90);
+        bob.forward(160);
+        bob.right(90);
+        bob.forward(40);
+        bob.left(135);
+        bob.forward(50);
+        bob.left(165);
+        bob.forward(60);
+        bob.right(40);
+        bob.forward(65);
+        bob.left(20);
+        bob.forward(65);
+        bob.right(45);
+        bob.forward(50);
+        bob.left(165);
+        bob.forward(40);
      }
  
      // ========================= Don't modify the code after this point! ========================= //
